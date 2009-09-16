@@ -10,7 +10,7 @@ SET SESSION time_zone = "+5:30";
 ALTER DATABASE CHARACTER SET "utf8";
 
 DROP TABLE IF EXISTS `group`;
-CREATE TABLE `group` (
+CREATE TABLE `groups` (
     `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `admin_member_id` INT NOT NULL REFERENCES `members`(`id`),
     `group_visibility` ENUM('anybody','members') NOT NULL default 'members',
