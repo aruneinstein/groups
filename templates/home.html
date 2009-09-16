@@ -1,0 +1,13 @@
+<html>
+<head>
+  <title>PaGaL Groups</title>
+  </head>
+
+<body>
+  <h1 style=escape("background-color = #463FBA;text-color = #FFFFFF;")>PaGaL groups</h1>
+  {% for group in groups %}
+  <a href="{{ group['title'] }}">{{ group['title'] }}</a>
+  {% end %}
+
+  </body>
+</html>

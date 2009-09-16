@@ -1,0 +1,13 @@
+from storm.locals import *
+
+class Discussions(object):
+    """This is the table stores the content of the start of the
+    disussions and stores a id that leads to the replies which 
+    exist in reply table
+    """
+    
+    __storm_table__ = "discussions"
+    id = Int(primary=True)
+    title = Unicode()
+    reply_id = Int()
+    content = 
